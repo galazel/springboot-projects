@@ -1,0 +1,92 @@
+body
+{
+    background: linear-gradient(rgba(229, 203, 203, 0.5) , rgba(0, 0, 0, 0.2)),url(harvard.jpeg);
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-container
+{
+    background-color: rgba(46, 154, 255, 0.329);
+    height: auto;
+    width: 40vw;
+    padding: 5%;
+    opacity: 0.9;
+    border-radius: 1rem;
+    color: black;
+    
+}
+td
+{
+    width: 15vw;
+}
+.title-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.next
+{
+    padding: 1%;
+    width: 10%;
+    height: 3%;
+    border-style: none;
+    cursor: pointer;
+}
+.next:hover
+{
+    background-color: rgb(99, 178, 214);
+    color: white;
+}
+.button-container
+{
+    display: flex;
+    justify-content: flex-end;
+}
+label{
+    font-size: larger;
+}
+input[type = "text"], input[type = "date"], input[type = "email"], select
+{
+    width: 10vw;
+    height: 2vh;
+    border-radius: 0.5rem;
+    border-style: none;
+    padding: 0.5rem;
+
+}
+input[type = "text"]:focus, input[type = "date"]:focus, input[type = "email"]:focus, select
+{
+    background-color: rgb(213, 218, 230);
+    border: none;
+    outline: none;
+}
+.information-container
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button-container-next-page
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+li
+{
+    list-style: none;
+}
+
+
