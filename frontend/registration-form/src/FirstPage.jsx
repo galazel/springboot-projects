@@ -25,7 +25,7 @@ export default function FirstPage({count, setCount })
   return (
     <>
       <div>
-        <h2>Personal Information</h2>
+        <h2 className="text-xl font-bold mb-4">Personal Information</h2>
       </div>
       <div className="grid grid-rows-8 gap-1">
         <div className="grid grid-cols-2 gap-2">

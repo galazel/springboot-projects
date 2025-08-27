@@ -12,7 +12,7 @@ function App() {
   return (
     <form
       action=""
-      className="mx-auto mt-10 max-w-lg p-5 border border-gray-300 rounded-lg shadow-lg bg-amber-100"
+      className="mx-auto mt-10 max-w-lg p-10 border border-gray-300 rounded-lg shadow-lg bg-amber-100"
     >
       <div className="mx-auto text-center mb-8">
         <h1 className="text-5xl mb-5">Harvard University Registration Form</h1>
