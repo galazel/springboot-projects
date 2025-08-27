@@ -4,7 +4,11 @@ export default function MessageSent() {
 
     function handleViewProfile()
     {   
-      
+       const personalInfo = JSON.parse(localStorage.getItem('personalInfo'));
+       const addressInfo = JSON.parse(localStorage.getItem('addressInfo'));
+       console.log(personalInfo);
+       console.log(addressInfo);
+       localStorage.clear();
     }
     return(
         <>
