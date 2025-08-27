@@ -13,7 +13,7 @@ export default function MessageSent() {
     }
     return(
         <>
-            <div className="mx-auto flex flex-col gap-2 items-center justify-center p-4 ">
+            <div className="mx-auto flex flex-col gap-2 items-center justify-center bg-green-600 text-white p-10 rounded-lg ">
                 <h1 className="text-5xl">Successfully registered!</h1>
                 <p>Your registration is successfull, visit you profile to know more.</p>
                 <button className="bg-orange-500 rounded-md p-2 cursor-pointer" onClick={handleViewProfile}>Visit Profile</button>

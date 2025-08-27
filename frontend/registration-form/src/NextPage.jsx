@@ -42,7 +42,7 @@ export default function NextPage({ count, setCount }) {
           <label htmlFor="streetAdd">Street Address</label>
           <textarea
             placeholder="Enter your street address"
-            className="bg-amber-600 rounded-md p-3 w-full"
+            className="bg-white rounded-md p-3 w-full"
             onChange={(e) => setValues({...values, streetAdd: e.target.value})}
             value={values.streetAdd}
           />
@@ -54,7 +54,7 @@ export default function NextPage({ count, setCount }) {
             <input
               type="text"
               placeholder="Enter your city"
-              className="bg-amber-600 rounded-md p-2 w-full"
+              className="bg-white rounded-md p-2 w-full"
               onChange={(e) => setValues({...values, city: e.target.value})}
               value={values.city}
             />
@@ -64,7 +64,7 @@ export default function NextPage({ count, setCount }) {
             <input
               type="text"
               placeholder="Enter your state"
-              className="bg-amber-600 rounded-md p-2 w-full"
+              className="bg-white rounded-md p-2 w-full"
               onChange={(e) => setValues({...values, state: e.target.value})}
               value={values.state}
             />
@@ -76,7 +76,7 @@ export default function NextPage({ count, setCount }) {
           <input
             type="text"
             placeholder="Enter your postal code"
-            className="bg-amber-600 rounded-md p-2 w-full"
+            className="bg-white rounded-md p-2 w-full"
             onChange={(e) => setValues({...values, postalCode: e.target.value})}
             value={values.postalCode}
           />

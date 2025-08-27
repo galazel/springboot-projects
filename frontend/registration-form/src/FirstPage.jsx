@@ -36,14 +36,14 @@ export default function FirstPage({count, setCount })
           <input
             type="text"
             placeholder="Enter your first name"
-            className="bg-amber-600 rounded-md p-2 "
+            className="bg-white rounded-md p-2 "
             onChange={(e) => setValues({...values, firstName: e.target.value})}
             value={values.firstName}
           />
           <input
             type="text"
             placeholder="Enter your last name"
-            className="bg-amber-600 rounded-md p-2 "
+            className="bg-white rounded-md p-2 "
             onChange={(e) => setValues({...values, lastName: e.target.value})}
             value={values.lastName}
           />
@@ -55,7 +55,7 @@ export default function FirstPage({count, setCount })
           <input
             type="date"
             placeholder="Enter your first name"
-            className="bg-amber-600 rounded-md p-2 "
+            className="bg-white rounded-md p-2 "
             onChange={(e) =>setValues({...values, dateOfBirth: e.target.value})}
             value={values.dateOfBirth}
           />
@@ -67,7 +67,7 @@ export default function FirstPage({count, setCount })
           <input
             type="text"
             placeholder="Enter your phone number name"
-            className="bg-amber-600 rounded-md p-2 "
+            className="bg-white rounded-md p-2 "
             onChange={(e) => setValues({...values, contactNumber: e.target.value})}
             value={values.contactNumber}
           />
@@ -79,7 +79,7 @@ export default function FirstPage({count, setCount })
           <input
             type="email"
             placeholder="Enter your email address"
-            className="bg-amber-600 rounded-md p-2 "
+            className="bg-white rounded-md p-2 "
             onChange={(e) => setValues({...values, emailAdd: e.target.value})}
             value={values.emailAdd}
           />
