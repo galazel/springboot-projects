@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(1);
   if(count == 3)
   {
-    return <MessageSent />
+    return <MessageSent/>
   }
   return (
     <form

@@ -1,9 +1,25 @@
-export default function FirstPage({count, setCount }) {
+import { useEffect,useState } from "react";
 
+export default function FirstPage({count, setCount }) 
+{
+   const [values,setValues] = useState({
+    firstName: '',
+    lastName: '',
+    dateOfBirth: '',
+    contactNumber: '',
+    emailAdd: ''
+   })
+    useEffect(() => {
+      const savedValues = JSON.parse(localStorage.getItem('personalInfo'));
+      if (savedValues) {
+        setValues(savedValues);
+      }
+    }, []);
     function handleNext(event) 
     {
         event.preventDefault();
         setCount(prev => prev + 1);
+        localStorage.setItem('personalInfo', JSON.stringify(values));
     }
 
   return (
@@ -21,11 +37,15 @@ export default function FirstPage({count, setCount }) {
             type="text"
             placeholder="Enter your first name"
             className="bg-amber-600 rounded-md p-2 "
+            onChange={(e) => setValues({...values, firstName: e.target.value})}
+            value={values.firstName}
           />
           <input
             type="text"
             placeholder="Enter your last name"
             className="bg-amber-600 rounded-md p-2 "
+            onChange={(e) => setValues({...values, lastName: e.target.value})}
+            value={values.lastName}
           />
         </div>
         <div className="grid gap-2">
@@ -36,6 +56,8 @@ export default function FirstPage({count, setCount }) {
             type="date"
             placeholder="Enter your first name"
             className="bg-amber-600 rounded-md p-2 "
+            onChange={(e) =>setValues({...values, dateOfBirth: e.target.value})}
+            value={values.dateOfBirth}
           />
         </div>
         <div className="grid grid-cols-2 gap-2">
@@ -46,6 +68,8 @@ export default function FirstPage({count, setCount }) {
             type="text"
             placeholder="Enter your phone number name"
             className="bg-amber-600 rounded-md p-2 "
+            onChange={(e) => setValues({...values, contactNumber: e.target.value})}
+            value={values.contactNumber}
           />
         </div>
         <div className="grid grid-cols-2 gap-2">
@@ -56,6 +80,8 @@ export default function FirstPage({count, setCount }) {
             type="email"
             placeholder="Enter your email address"
             className="bg-amber-600 rounded-md p-2 "
+            onChange={(e) => setValues({...values, emailAdd: e.target.value})}
+            value={values.emailAdd}
           />
         </div>
         <div className="flex justify-center p-2">
